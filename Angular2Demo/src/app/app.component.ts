@@ -5,11 +5,15 @@ import { normalize } from 'path';
 
 @Component({
     selector: 'my-app',
-    template: `<my-employee></my-employee>`
+    template: `name : <input [value]='name' (input)='name =$event.target.value'/>
+                <br/>
+                name  : <input [(ngModel)] = 'name'/>
+                <br/>
+                Entered Value : {{name}}`               
 })
 
-export class AppComponent  {
-    onClick(): void {
-        console.log("Button Clicked");
-    }
+export class AppComponent {
+
+    name: string = "Sanjay";
+
 }
