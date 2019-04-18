@@ -5,11 +5,7 @@ import { normalize } from 'path';
 
 @Component({
     selector: 'my-app',
-    template: `name : <input [value]='name' (input)='name =$event.target.value'/>
-                <br/>
-                name  : <input [(ngModel)] = 'name'/>
-                <br/>
-                Entered Value : {{name}}`               
+    templateUrl: `app/app.component.html`               
 })
 
 export class AppComponent {

@@ -1,0 +1,16 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th> Code</th>
+            <th> Name</th>
+            <th> Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employee">
+            <td>{{emp.code}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.gender}}</td>
+        </tr>
+    </tbody>
+</table>
